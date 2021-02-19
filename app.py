@@ -29,7 +29,7 @@ app = Flask(__name__)
 model = Sequential()
 
 # Model saved with Keras model.save()
-MODEL_PATH = 'mdl_wts_vgg.hdf5'
+MODEL_PATH = 'mdl_wts_own.hdf5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
