@@ -125,7 +125,7 @@ def upload():
        # print(res)
         
         
-        if(pred_prob < 0.95):
+        if(pred_prob < 0.85):
             res = "This image doesn't seems to have a plant"
         
         return res
