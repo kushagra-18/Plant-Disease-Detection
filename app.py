@@ -1,3 +1,4 @@
+# importing libraries
 from __future__ import division, print_function
 # coding=utf-8
 import sys
@@ -54,7 +55,7 @@ def index():
     # Main page
     return render_template('index.html')
 
-
+# upload function
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
@@ -126,12 +127,12 @@ def upload():
         
         
         if(pred_prob < 0.85):
-            res = "This image doesn't seems to have a plant"
+            res = "This image doesn't seems to be a plant."
         
         return res
     return None
 
-
+# main function
 if __name__ == '__main__':
     app.run(debug=True)
 
